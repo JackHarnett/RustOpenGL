@@ -58,6 +58,14 @@ pub struct GameLogic {
 	pub should_close : bool,
 }
 
+impl GameLogic {
+	pub fn new() -> Self {
+		GameLogic {
+			should_close : false,
+		}
+	}
+}
+
 impl AbstractGameLogic for GameLogic {
 
 	fn handle_input(&mut self, event_loop : &mut glutin::EventsLoop) {

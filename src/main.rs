@@ -7,9 +7,7 @@ use game::GameLogic;
 fn main() {
     println!("Hello, world!");
 
-    let game = Game::new(GameLogic {
-    	should_close : false,
-    } );
+    let game = Game::new(GameLogic::new());
 
     game.unwrap().init();
 }
